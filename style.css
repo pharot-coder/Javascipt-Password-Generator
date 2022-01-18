@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: linear-gradient(to bottom right, red, yellow);
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  padding: 10px 20px;
+  background: gainsboro;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 10px;
+  outline: none;
+  background-image: linear-gradient(to bottom left, purple, orange);
+}
+
+.container .con-header {
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+
+.container .con-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container .con-body .output-password {
+  width: 100%;
+  position: relative;
+}
+
+.container .con-body .output-password .form-control {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.container .con-body .output-password #copy {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.container .con-body .output-password button:hover {
+  background-color: blue;
+  transition: all 1s;
+  color: white;
+}
+
+.form-control:focus {
+  border: 1px solid lightblue;
+}
+
+hr {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.container .con-body .form-check-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+.container .con-body .form-check-box input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+
+.container .con-footer {
+  margin: 10px auto;
+  width: 100%;
+}
+
+.generate-password {
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom left, red, yellow);
+}
+
+.container .con-body .form-check-box input[type="text"] {
+  width: 50px;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.container .con-body .form-check-box input[type="text"]:focus {
+  border: 1px solid blueviolet;
+}
